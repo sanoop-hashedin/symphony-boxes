@@ -1,6 +1,6 @@
 $(document).ready(function () {
     "use strict";
-    var debuggId = 1;
+    var debugId = 0;
     var container = $('.wrapper');
     var randomBoxNumber = Math.ceil(Math.random() * 100);
     //alert(randomBoxNumber);
@@ -28,7 +28,7 @@ $(document).ready(function () {
         for (var j = 0; j < 20; j++) {
             var box = $("<div></div>");
             var value = $("<p></p>");
-            if (debuggId === 1) {
+            if (debugId === 1) {
                 value.css("color", "#fff");
             } else {
                 value.css("color", color);
